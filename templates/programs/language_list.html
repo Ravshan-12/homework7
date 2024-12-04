@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add a New Programming Language</title>
+</head>
+<body>
+    <h1>Add a New Programming Language</h1>
+    <ul>
+    {% for language in languages %}
+        <li>{{ language.title }}</li>
+    {% endfor %}
+    </ul>
+<a href="{% url 'add_language' %}">Add New Language</a>
+</body>
+</html>
